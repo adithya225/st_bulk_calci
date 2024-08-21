@@ -149,7 +149,7 @@ def s_interest(principle, r, s_date, e_date):
 
     interest = principle*t*rt
     return interest
-
+st.set_page_config(page_title="Interest Calculator", layout="wide", initial_sidebar_state="expanded")
 st.title('Interest Calculator')
 uploaded_file = st.file_uploader("Upload an excel file", type=['xlsx'])
 date_option = st.radio("Select End Date", ["Today", "Choose Date"])
